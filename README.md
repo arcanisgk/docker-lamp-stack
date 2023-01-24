@@ -34,15 +34,15 @@ HOST_MACHINE_PMA_PORT=81
 PHPVERSION=php81
 ```
 
-6. Once the variables have been edited, go to the root directory of your project, in this example case:
+6. Once the variables have been edited, go to the root directory of your project, in this example case (if you want to change the name of the project you must do it in this step):
 
-```
-PS D:\Desarrollos\Personales\docker\docker-lamp-stack>:
+```PS
+C:\dirname\dirname\dirname\docker-lamp-stack>:
 ```
 
-7. run the installation command:
+7. Run the installation command:
 
-```
+```PS
 docker-compose up -d
 ```
 
