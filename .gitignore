@@ -1,0 +1,5 @@
+.idea
+/app/Assets/docker/data/mysql/*
+/app/Assets/docker/logs/apache2/*.log
+/app/Assets/docker/logs/mysql/*.log
+/app/Assets/docker/logs/xdebug/*.log
