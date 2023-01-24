@@ -12,8 +12,8 @@ you need to have installed docker/docker desktop and version WSL2.0
 1. Download or clone to where you want your project to be.
 2. You should not put this in folders associated with Google Drive or One Drive this causes errors.
 3. Navigate in the directories and go to app->Assets->docker/
-4. Find the .env file, which you will open with your IDE or Reference Code Editor.
-5. At this point, in the .env file at the end you will find the environment variables that you must edit to your liking:
+4. Find the `.env` file, which you will open with your IDE or Reference Code Editor.
+5. At this point, in the `.env` file at the end you will find the environment variables that you must edit to your like:
 
 ```.dotenv
 COMPOSE_PROJECT_NAME=YourProjectName
@@ -34,7 +34,7 @@ HOST_MACHINE_PMA_PORT=81
 PHPVERSION=php81
 ```
 
-6. Once the variables have been edited, go to the root directory of your project, in this example case (if you want to change the name of the project you must do it in this step):
+6. Once the variables have been edited, go to the root directory of your project (not the root document), in this example case (if you want to change the name of the project you must do it in this step):
 
 ```PS
 C:\dirname\dirname\dirname\docker-lamp-stack>:
@@ -48,7 +48,9 @@ docker-compose up -d
 
 Note 1: mysql data persistence (database) is physically located in: app->Assets->docker->data
 
-Note 2: Installation takes several minutes; It is important that if you do not know how to use docker ... preferably you do it with a clean installation and that you have eliminated any installation remnants.
+Note 2: apache document root and web server root point to public/index.php
+
+Note 3: Installation takes several minutes; It is important that if you do not know how to use docker ... preferably you do it with a clean installation and that you have eliminated any installation remnants.
 
 ### Contributing:
 
@@ -59,10 +61,10 @@ If you discover a security vulnerability within Docker Lamp Stack, please create
 
 ## License
 
-The Docker Lamp Stack project is open-source software licensed under the MIT license.
+The Docker Lamp Stack project is open-source software licensed under the GLP-3 license.
 
 
 ### Contributors
-- (c) 2020 Walter Francisco Núñez Cruz icarosnet@gmail.com 
+- (c) 2023 Walter Francisco Núñez Cruz icarosnet@gmail.com 
 
 [![Donate](https://img.shields.io/static/v1?label=Donate&message=PayPal.me/wnunez86&color=brightgreen)](https://www.paypal.me/wnunez86/4.99USD)
